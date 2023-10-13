@@ -152,8 +152,7 @@ def scrap_popup_html(driver,pageName):
         sleep(3)
         
 
-#driver = login('aniket8239053872@gmail.com','Aniket@123')
-driver = login('aj.abhi.scala@gmail.com','Abhi@123')
+driver = login('gmailId','password')
 
 # Wait for the element to be present
 wait = WebDriverWait(driver, 20)
