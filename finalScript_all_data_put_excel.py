@@ -229,7 +229,7 @@ def extract_lives_in(text):
     return lives_from_data
 
 #########################################Call Login Function################################
-driver = login('aniket8239053872@gmail.com','Aniket@123')
+driver = login('Email Id','password')
 
 #########################################Load Excell which is contain post,comment,profile URl################################
 excel_file = "output.xlsx"  # Replace with your Excel file path
@@ -389,7 +389,7 @@ for index, row in df.iterrows():
         print(df)
         print("Below done")
         # appending the data of df after the data of demo1.xlsx
-        with pd.ExcelWriter("final_570_bjp_outer.xlsx",mode="a",engine="openpyxl",if_sheet_exists="overlay") as writer:
+        with pd.ExcelWriter("final_output.xlsx",mode="a",engine="openpyxl",if_sheet_exists="overlay") as writer:
             df.to_excel(writer, sheet_name="Sheet1",header=None, startrow=writer.sheets["Sheet1"].max_row,index=False)
             print('Done')
         del post[:]
